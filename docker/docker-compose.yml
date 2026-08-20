@@ -27,5 +27,8 @@ services:
       postgres:
         condition: service_healthy
 
+  ingestion:
+    build: ../ingestion
+
 volumes:
   postgres_data:
